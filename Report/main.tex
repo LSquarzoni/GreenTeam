@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{listings} % Include the listings package
+\usepackage[T1]{fontenc} % Add the fontenc package with T1 encoding
+\usepackage{subcaption}
+
+\usepackage{./Layout/EngReport}
+
+\graphicspath{{../PLOTS/}}
+\bibliography{./Layout/Sources}
+\onehalfspacing
+\graphicspath{../PLOTS/}
+\geometry{letterpaper, portrait, includeheadfoot=true, hmargin=1in, vmargin=1in}
+
+%\fontsize{font size}{vertsize (usually 1.2x)}\selectfont
+
+\begin{document}
+\renewcommand{\familydefault}{\rmdefault}
+
+\input{./Layout/titlepage}
+\input{./Layout/headerfooter}
+\tableofcontents
+\pagebreak
+
+\fontsize{12}{12}\selectfont{
+\input{./Sections/0_Abstract}
+\pagebreak
+
+\input{./Sections/1_Power}
+\pagebreak
+
+\input{./Sections/2_CarbonIntensity}
+\pagebreak
+
+\input{./Sections/3_OperationalCarbonFootprint}
+\pagebreak
+
+}
+
+\end{document}

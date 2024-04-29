@@ -1,0 +1,86 @@
+\section{Power Analysis}
+\noindent
+The data distribution goes from 2020-04 to 2022-10, showing a discrete amount of information that can be enough to make some initial observations and guessings. \\
+The lines in the plots that have a strange or unusual pattern are the result of the horizontal and vertical interpolation applied to fill some empty spaces in the distribution.
+
+\vspace{-15pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../PLOTS/PWR_total.png}
+\captionsetup{skip=-10pt}
+\caption{PWR total value (sum of all nodes in the server)}
+\label{fig:PWR_total}
+\end{figure}
+
+\begin{center}
+\setstretch{0.9}
+count    2.110200e+04 \\
+mean     7.997859e+05 \\
+std      1.008300e+05 \\
+min      3.101649e+04 \\
+25\%      7.600741e+05 \\
+50\%      8.096636e+05 \\
+75\%      8.581640e+05 \\
+max      1.311606e+06
+\end{center}
+
+In terms of pure power consumption, we see a visible peak that reaches a value of 1.3 MW, while the general mean stays close to 0.8 MW. The data fluctuates a lot throughout the days, but it is difficult to find any particular pattern or repetition at this level of depth; what we can guess is that all o most of the lowest points in the plot are given by a moment or period of maintenance for the server, while the highest values might indicate an episode of testing for the capabilities of the server in terms of maximum computational power.
+
+\subsection{PWR r205}
+At rack or even node level we see a similar behaviour: a lot of peaks rising from an horizontal line that indicates the mean power consumption. 
+
+\vspace{-15pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../PLOTS/PWR_r205.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r205}
+\label{fig:PWR_r205}
+\end{figure}
+
+\vspace{-20pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../PLOTS/PWR_r205n01.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r205n01}
+\label{fig:PWR_r205n01}
+\end{figure}
+
+\subsection{PWR r206}
+The first rack (r205) seems to be the only one with such a regular and stable power consumption; indeed just looking at a different rack like this one (but every other rack is more similar to this) we see a much different and oscillating plot. The only hypothesis we can make is that the first rack is much less used that all the others, or maybe it is used for a different purpose.
+
+\vspace{-12pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../PLOTS/PWR_r206.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r206}
+\label{fig:PWR_r206}
+\end{figure}
+
+\vspace{-20pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../PLOTS/PWR_r206n01.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r206n01}
+\label{fig:PWR_r206n01}
+\end{figure}
+
+\subsection{PWR r206n01 STL}
+Even making a seasonal-trend decomposition it’s hard to highlight any specific trend, since the data is full of variations and outliers. Taking advantage of a different tool we’ll try to make any seasonality clearer.
+
+\vspace{-10pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../PLOTS/PWR_stl_r206n01.png}
+\caption{PWR r206n01 STL}
+\label{fig:PWR_stl_r206n01}
+\end{figure}
