@@ -779,4 +779,81 @@ LaTeX Info: Redefining \ohm on input line 15.
 Package gensymb Info: Using \textohm for \ohm on input line 15.
 Package gensymb Info: Using \textmu for \micro on input line 15.
  (c:/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
-File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictiona
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 15.
+ (./Layout/titlepage.tex
+<Logo/GreenTeam_Logo2.png, id=1, 837.3684pt x 1083.0864pt>
+File: Logo/GreenTeam_Logo2.png Graphic file (type png)
+<use Logo/GreenTeam_Logo2.png>
+Package pdftex.def Info: Logo/GreenTeam_Logo2.png  used on input line 10.
+(pdftex.def)             Requested size: 117.43875pt x 151.89548pt.
+ [1
+
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Logo/GreenTeam_Logo2.png>]) (./Layout/headerfooter.tex) (./main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [1] (./Sections/0_Abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+) [2] (./Sections/Tools.tex) [3] (./Sections/1_Power.tex
+<../../PLOTS/PWR_total.png, id=27, 1445.4pt x 722.7pt>
+File: ../../PLOTS/PWR_total.png Graphic file (type png)
+<use ../../PLOTS/PWR_total.png>
+Package pdftex.def Info: ../../PLOTS/PWR_total.png  used on input line 10.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+<../../PLOTS/E_total.png, id=28, 1445.4pt x 722.7pt>
+File: ../../PLOTS/E_total.png Graphic file (type png)
+<use ../../PLOTS/E_total.png>
+Package pdftex.def Info: ../../PLOTS/E_total.png  used on input line 34.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+ [4 <../../PLOTS/PWR_total.png>]
+<../../PLOTS/PWR_r205.png, id=33, 1445.4pt x 722.7pt>
+File: ../../PLOTS/PWR_r205.png Graphic file (type png)
+<use ../../PLOTS/PWR_r205.png>
+Package pdftex.def Info: ../../PLOTS/PWR_r205.png  used on input line 52.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+ [5 <../../PLOTS/E_total.png>]
+<../../PLOTS/PWR_r205n01.png, id=38, 1445.4pt x 722.7pt>
+File: ../../PLOTS/PWR_r205n01.png Graphic file (type png)
+<use ../../PLOTS/PWR_r205n01.png>
+Package pdftex.def Info: ../../PLOTS/PWR_r205n01.png  used on input line 62.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+ [6 <../../PLOTS/PWR_r205.png> <../../PLOTS/PWR_r205n01.png>]
+<../../PLOTS/PWR_r206.png, id=45, 1445.4pt x 722.7pt>
+File: ../../PLOTS/PWR_r206.png Graphic file (type png)
+<use ../../PLOTS/PWR_r206.png>
+Package pdftex.def Info: ../../PLOTS/PWR_r206.png  used on input line 75.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+<../../PLOTS/PWR_r206n01.png, id=46, 1445.4pt x 722.7pt>
+File: ../../PLOTS/PWR_r206n01.png Graphic file (type png)
+<use ../../PLOTS/PWR_r206n01.png>
+Package pdftex.def Info: ../../PLOTS/PWR_r206n01.png  used on input line 85.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+ [7 <../../PLOTS/PWR_r206.png> <../../PLOTS/PWR_r206n01.png>]
+<../../PLOTS/PWR_stl_r206n01.png, id=52, 1806.75pt x 1806.75pt>
+File: ../../PLOTS/PWR_stl_r206n01.png Graphic file (type png)
+<use ../../PLOTS/PWR_stl_r206n01.png>
+Package pdftex.def Info: ../../PLOTS/PWR_stl_r206n01.png  used on input line 98.
+(pdftex.def)             Requested size: 469.75502pt x 469.74393pt.
+ [8 <../../PLOTS/PWR_stl_r206n01.png>]
+<../../PLOTS/PWR_prophet.png, id=57, 650.43pt x 646.3347pt>
+File: ../../PLOTS/PWR_prophet.png Graphic file (type png)
+<use ../../PLOTS/PWR_prophet.png>
+Package pdftex.def Info: ../../PLOTS/PWR_prophet.png  used on input line 111.
+(pdftex.def)             Requested size: 469.75502pt x 466.81038pt.
+) [9 <../../PLOTS/PWR_prophet.png>] [10] (./Sections/2_CarbonIntensity.tex
+<../../PLOTS/CI_direct.png, id=65, 1445.4pt x 722.7pt>
+File: ../../PLOTS/CI_direct.png Graphic file (type png)
+<use ../../PLOTS/CI_direct.png>
+Package pdftex.def Info: ../../PLOTS/CI_direct.png  used on input line 10.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+<../../PLOTS/CI_LCA+direct.png, id=66, 1445.4pt x 722.7pt>
+File: ../../PLOTS/CI_LCA+direct.png Graphic file (type png)
+<use ../../PLOTS/CI_LCA+direct.png>
+Package pdftex.def Info: ../../PLOTS/CI_LCA+direct.png  used on input line 20.
+(pdftex.def)             Requested size: 469.75502pt x 234.87471pt.
+ [11 <../../PLOTS/CI_direct.png> <../../PLOTS
