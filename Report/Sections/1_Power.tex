@@ -1,7 +1,7 @@
-\section{Power Analysis}
+\section{Power and Energy Analysis}
 \noindent
-The data distribution goes from 2020-04 to 2022-10, showing a discrete amount of information that can be enough to make some initial observations and guessings. \\
-The lines in the plots that have a strange or unusual pattern are the result of the horizontal and vertical interpolation applied to fill some empty spaces in the distribution.
+The data distribution spans from April 2020 to October 2022, showing a discrete amount of information that can be enough to make some initial observations and guessings. While there isn't a discernible pattern across the entire period, comparing plots for specific nodes (r205n01), the sum of all nodes, and individual racks reveals certain trends. \\
+The lines in the plots that have a strange or unusual pattern are the result of the horizontal and vertical interpolation applied to fill some empty spaces in the distribution. No further manipulations have been applied to the data.
 
 \vspace{-15pt}
 
@@ -26,6 +26,21 @@ max      1.311606e+06
 \end{center}
 
 In terms of pure power consumption, we see a visible peak that reaches a value of 1.3 MW, while the general mean stays close to 0.8 MW. The data fluctuates a lot throughout the days, but it is difficult to find any particular pattern or repetition at this level of depth; what we can guess is that all o most of the lowest points in the plot are given by a moment or period of maintenance for the server, while the highest values might indicate an episode of testing for the capabilities of the server in terms of maximum computational power.
+
+\vspace{-15pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/E_total.png}
+\captionsetup{skip=-10pt}
+\caption{E total value (sum of all nodes in the server)}
+\label{fig:E_total}
+\end{figure}
+
+The energy computation was conducted based on power consumption data to derive energy values in kWh. \\
+Distinct regions in the plot exhibit consistent energy levels around the mean, notably in June and August, alongside regions with negative peaks (e.g., July and October) and others with positive peaks. Understanding these peaks in the context of high-power computing offers valuable insights; \\
+for example, cooling needs vary with external conditions like temperature. Peaks may coincide with hotter periods, necessitating more energy for cooling. \\
+Also, changes in online service or data processing demand can influence energy consumption, e.g., heightened activity leading to increased power usage.
 
 \subsection{PWR r205}
 At rack or even node level we see a similar behaviour: a lot of peaks rising from an horizontal line that indicates the mean power consumption. 
@@ -86,7 +101,8 @@ Even making a seasonal-trend decomposition it’s hard to highlight any specific
 \end{figure}
 
 \subsection{PWR analysis using Meta's Prophet}
-
+Thanks to the usage of this method we are able to extract a clearer representation of the possible trends of power consumption in our server:
+good choices, purely looking at the following data, might be to increase the nodes' usage during the night, during week days and also during hot seasons, all periods in which power consumption results to be lower. 
 
 \vspace{-10pt}
 
@@ -96,3 +112,7 @@ Even making a seasonal-trend decomposition it’s hard to highlight any specific
 \caption{PWR trends}
 \label{fig:PWR_prophet}
 \end{figure}
+
+Analyzing these trends aids in optimizing energy management strategies and mitigating environmental impact in high-power computing environments.
+For example implementing energy optimization algorithms could reduce consumption during certain periods, resulting in negative peaks;
+while aiming to a better server energy efficiency can lead to improvements in server and cooling efficiency and alter the graph's shape over time, potentially reducing energy consumption peaks.
