@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1714481907.49278 "main.bcf" "main.bbl" "main" 1714482205.78657 0
-  "main.bcf" 1714482205 107992 1372e320b8e132f38eb5706b82283cc8 "pdflatex"
+["biber main"] 1714481907.49278 "main.bcf" "main.bbl" "main" 1714482645.41127 0
+  "main.bcf" 1714482644 107992 1372e320b8e132f38eb5706b82283cc8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1714482161.72504 "c:/Users/loren/OneDrive/Documenti/Università/2_LAB of Big Data Architectures/GreenTeam/Report/main.tex" "main.pdf" "main" 1714482205.78772 0
+["pdflatex"] 1714482603.05162 "c:/Users/loren/OneDrive/Documenti/Università/2_LAB of Big Data Architectures/GreenTeam/Report/main.tex" "main.pdf" "main" 1714482645.41222 0
   "../../PLOTS/CI_LCA+direct.png" 1714470090 597321 2c7b1b7f5cd37fed0c6b6c6672397fe2 ""
   "../../PLOTS/CI_comparison.png" 1714470098 1697238 d948a25f1af44c49c60e97d69c33a654 ""
   "../../PLOTS/CI_direct.png" 1714470083 534820 d042cefb1906d8f44f509174b8fb63d6 ""
@@ -27,7 +27,7 @@
   "Layout/titlepage.tex" 1714395912 554 234d64d79f01ce7b1c26f19ffc9d7403 ""
   "Logo/GreenTeam_Logo2.png" 1713965996 1349190 d55e9dad551ae66c38ba30de3df5a2e4 ""
   "Sections/0_Abstract.tex" 1714395722 401 2f32ff3c06d0cbcb9f5392d719ca0964 ""
-  "Sections/1_Power.tex" 1714482160 4772 205b64365a5841172542e84f6cfe5be6 ""
+  "Sections/1_Power.tex" 1714482557 5520 8c1a37aa1c15abc8dbb7d7da32f8ce74 ""
   "Sections/2_CarbonIntensity.tex" 1714395793 2725 b71a55feda5c482d51685a33b89cb054 ""
   "Sections/3_OperationalCarbonFootprint.tex" 1714471607 1295 2c3180363d1249afd66e87b8887ef8e8 ""
   "Sections/Tools.tex" 1714471607 166 4e0a535b16fd0a674869642ae1591160 ""
@@ -154,11 +154,11 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1714398838 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1714399141 8222561 75cdf38083a339fe6a52d27f8e117d21 ""
   "c:/texlive/2024/texmf.cnf" 1714398803 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1714482205 4522 963dfa416bd9a810774a9a4e09120793 "pdflatex"
+  "main.aux" 1714482644 4522 2bfd7608a79bf2be743c102c988758eb "pdflatex"
   "main.bbl" 1714481909 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.run.xml" 1714482205 2224 bc6149f5caee4074188e1b81a66978d0 "pdflatex"
+  "main.run.xml" 1714482644 2224 bc6149f5caee4074188e1b81a66978d0 "pdflatex"
   "main.tex" 1714471608 884 ff3ca31e7cbe549bc88a38d1b29e8bfa ""
-  "main.toc" 1714482205 1104 3c1695fff76fefb64318f938d9598be7 "pdflatex"
+  "main.toc" 1714482644 1104 2ea65865a68c244eb42ed77ec5a3f1c9 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
