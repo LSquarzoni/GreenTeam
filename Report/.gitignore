@@ -1,5 +1,5 @@
+# ignoring some build latex files except ouput file
 *.aux
-*.bbl
 *.bcf
 *.fdb_latexmk
 *.fls
