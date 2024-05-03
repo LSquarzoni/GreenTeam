@@ -1,11 +1,11 @@
 # Fdb version 4
 ["biber main"] 0 "main.bcf" "main.bbl" "main" 0 -1
-  "main.bcf" 1714745088 107992 1372e320b8e132f38eb5706b82283cc8 "pdflatex"
+  "main.bcf" 1714745970 107992 1372e320b8e132f38eb5706b82283cc8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1714745082.76606 "c:/Users/Baibek/Desktop/LoBDA/git/GreenTeam/Report/main.tex" "main.pdf" "main" 1714745089.01295 2
+["pdflatex"] 1714745964.8333 "c:/Users/Baibek/Desktop/LoBDA/git/GreenTeam/Report/main.tex" "main.pdf" "main" 1714745971.51857 2
   "../../PLOTS/CI_LCA+direct.png" 0 -1 0 ""
   "../../PLOTS/CI_comparison.png" 0 -1 0 ""
   "../../PLOTS/CI_direct.png" 0 -1 0 ""
@@ -143,10 +143,10 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1714462869 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1714462558 8222494 c091fc24281af857be658b183fb41936 ""
   "c:/texlive/2024/texmf.cnf" 1714462297 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1714745088 4529 5388cf5792ffbcdc5b142c3c57599b5d "pdflatex"
-  "main.bbl" 1714745073 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
+  "main.aux" 1714745970 4529 5388cf5792ffbcdc5b142c3c57599b5d "pdflatex"
+  "main.bbl" 1714745957 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
   "main.tex" 1714745013 884 ff3ca31e7cbe549bc88a38d1b29e8bfa ""
-  "main.toc" 1714745088 1106 c7b74ed161e1751e2112487e818be7f1 "pdflatex"
+  "main.toc" 1714745970 1106 c7b74ed161e1751e2112487e818be7f1 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

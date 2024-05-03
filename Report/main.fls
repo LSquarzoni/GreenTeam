@@ -4,8 +4,6 @@ INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/Baibek/Desktop/LoBDA/git/GreenTeam/Report/main.tex
 OUTPUT main.log
-
-
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo
