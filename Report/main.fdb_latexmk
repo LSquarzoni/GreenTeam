@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1714481907.49278 "main.bcf" "main.bbl" "main" 1714485351.57977 0
-  "main.bcf" 1714485351 107992 1372e320b8e132f38eb5706b82283cc8 "pdflatex"
+["biber main"] 1714481907.49278 "main.bcf" "main.bbl" "main" 1714719308.64072 0
+  "main.bcf" 1714719308 107992 1372e320b8e132f38eb5706b82283cc8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1714485308.53678 "c:/Users/loren/OneDrive/Documenti/Università/2_LAB of Big Data Architectures/GreenTeam/Report/main.tex" "main.pdf" "main" 1714485351.58102 0
+["pdflatex"] 1714719266.14973 "c:/Users/loren/OneDrive/Documenti/Università/2_LAB of Big Data Architectures/GreenTeam/Report/main.tex" "main.pdf" "main" 1714719308.64141 0
   "../../PLOTS/CI_LCA+direct.png" 1714470090 597321 2c7b1b7f5cd37fed0c6b6c6672397fe2 ""
   "../../PLOTS/CI_comparison.png" 1714470098 1697238 d948a25f1af44c49c60e97d69c33a654 ""
   "../../PLOTS/CI_direct.png" 1714470083 534820 d042cefb1906d8f44f509174b8fb63d6 ""
@@ -27,10 +27,10 @@
   "Layout/titlepage.tex" 1714395912 554 234d64d79f01ce7b1c26f19ffc9d7403 ""
   "Logo/GreenTeam_Logo2.png" 1713965996 1349190 d55e9dad551ae66c38ba30de3df5a2e4 ""
   "Sections/0_Abstract.tex" 1714395722 401 2f32ff3c06d0cbcb9f5392d719ca0964 ""
-  "Sections/1_Power.tex" 1714485264 5865 7d9d8a9d8aa0906b7b2e5241f5054098 ""
-  "Sections/2_CarbonIntensity.tex" 1714395793 2725 b71a55feda5c482d51685a33b89cb054 ""
-  "Sections/3_OperationalCarbonFootprint.tex" 1714485263 1933 ec541359d926ba3b601615525453a7ab ""
-  "Sections/Tools.tex" 1714471607 166 4e0a535b16fd0a674869642ae1591160 ""
+  "Sections/1_Power.tex" 1714719179 5867 b846c8a3a0c2ff1f8004df6cd033111a ""
+  "Sections/2_CarbonIntensity.tex" 1714719196 2727 853985de61e6bc6329851e207c0788a4 ""
+  "Sections/3_OperationalCarbonFootprint.tex" 1714719214 1935 e6c8df53a028f572bd06982e5a3c440b ""
+  "Sections/Tools.tex" 1714718992 2309 ec6ecacf90798226bef25e5847c0396d ""
   "c:/Users/loren/OneDrive/Documenti/Università/2_LAB of Big Data Architectures/GreenTeam/Report/main.tex" 1714471608 884 ff3ca31e7cbe549bc88a38d1b29e8bfa ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1714387185 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1714388010 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -154,11 +154,11 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1714398838 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1714399141 8222561 75cdf38083a339fe6a52d27f8e117d21 ""
   "c:/texlive/2024/texmf.cnf" 1714398803 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1714485351 4522 bfe325348d3384e806e735d3fc54282c "pdflatex"
+  "main.aux" 1714719308 4522 2de7a93272618704b862cd7f90f7deae "pdflatex"
   "main.bbl" 1714481909 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.run.xml" 1714485351 2224 bc6149f5caee4074188e1b81a66978d0 "pdflatex"
+  "main.run.xml" 1714719308 2224 bc6149f5caee4074188e1b81a66978d0 "pdflatex"
   "main.tex" 1714471608 884 ff3ca31e7cbe549bc88a38d1b29e8bfa ""
-  "main.toc" 1714485351 1104 07de7de024ffa6ff50c74752ffb14713 "pdflatex"
+  "main.toc" 1714719308 1104 2ea65865a68c244eb42ed77ec5a3f1c9 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
