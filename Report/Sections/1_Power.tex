@@ -55,11 +55,12 @@ The energy computation was conducted based on power consumption data to derive e
 Distinct regions in the plot exhibit consistent energy levels around the mean, notably in June and August, alongside regions with negative peaks (e.g., July and October) and others with positive peaks. Understanding these peaks in the context of high-power computing offers valuable insights; \\
 for example, cooling needs vary with external conditions like temperature. Peaks may coincide with hotter periods, necessitating more energy for cooling. \\
 Also, changes in online service or data processing demand can influence energy consumption, e.g., heightened activity leading to increased power usage.
+\clearpage 
 
 \subsection{PWR r205}
-At rack or even node level we see a similar behaviour: a lot of peaks rising from an horizontal line that indicates the mean power consumption. 
+At both rack and node levels in datacenters, the power consumption fluctuates around a baseline representing the average usage.\\This is due to varying workloads, with peaks corresponding to high-demand periods and valleys to low-demand one, to transient events and efficiency optimization strategies.
 
-\vspace{-15pt}
+\vspace{-5pt}
 
 \begin{figure}[H]
 \centering
@@ -69,7 +70,7 @@ At rack or even node level we see a similar behaviour: a lot of peaks rising fro
 \label{fig:PWR_r205}
 \end{figure}
 
-\vspace{-20pt}
+\vspace{-5pt}
 
 \begin{figure}[H]
 \centering
@@ -78,9 +79,10 @@ At rack or even node level we see a similar behaviour: a lot of peaks rising fro
 \caption{PWR r205n01}
 \label{fig:PWR_r205n01}
 \end{figure}
+\clearpage
 
 \subsection{PWR r206}
-The first rack (r205) seems to be the only one with such a regular and stable power consumption; indeed just looking at a different rack like this one (but every other rack is more similar to this) we see a much different and oscillating plot. The only hypothesis we can make is that the first rack is much less used that all the others, or maybe it is used for a different purpose.
+Comparing the plots of the first rack (r205) with respect to the others it seems to be that the only one with a regular and stable power consumption is the r205.\\ Looking at a different rack as the r206 in figure 5 (but every other rack is more similar to this) there is a much different and oscillating plot. 
 
 \vspace{-12pt}
 
@@ -101,6 +103,18 @@ The first rack (r205) seems to be the only one with such a regular and stable po
 \caption{PWR r206n01}
 \label{fig:PWR_r206n01}
 \end{figure}
+
+\subsubsection{Comparison r205 and other racks}
+The first rack in a data center often exhibits consistent power consumption due to several factors:
+\begin{itemize}
+    \item \textbf{Critical Infrastructure Equipment}: the first rack often contains critical equipment for infrastructure management, such as main routers or switches, which require a constant and reliable power supply. In addition data centers are designed with power distribution systems that ensure the first racks receive stable power and are not affected by load variations that may occur further down the distribution chain;
+    \item \textbf{Thermal Management}: The first racks are strategically positioned to benefit from optimal airflow, maintaining a constant temperature and reducing the risk of overheating. Consistent thermal conditions contribute to greater power regularity, as fluctuations in temperature can impact the energy efficiency of equipment;
+    \item \textbf{Facility Design}: The placement of racks and airflow management within the data center play a role in maintaining power consistency. Proper facility design ensures efficient airflow, contributing to stable power consumption;
+    \item \textbf{Uninterruptible Power Supplies (UPS) and Backup Generators}: Data centers employ UPS and backup generators to ensure uninterrupted and regular power supply to racks, safeguarding sensitive equipment from outages or voltage spikes;
+    \item \textbf{Rack Cabinet Design}: The choice and arrangement of rack cabinets can also influence power regularity. Enclosed racks, for instance, support better cooling efficiency and power distribution compared to open-frame racks, contributing to consistent power consumption.
+\end{itemize}
+All these factors work together to ensure that data centers operate with consistent power, which is essential for the reliability and performance of the services they provide.
+\clearpage
 
 \subsection{PWR r206n01 STL}
 Even making a seasonal-trend decomposition it’s hard to highlight any specific trend, since the data is full of variations and outliers. Taking advantage of a different tool we’ll try to make any seasonality clearer.
