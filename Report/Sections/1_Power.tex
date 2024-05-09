@@ -37,9 +37,8 @@ In terms of pure power consumption, we see a visible peak that reaches a value o
 \caption{E total value (sum of all nodes in the server)}
 \label{fig:E_total}
 \end{figure}
-
 \begin{center}
-\setstretch{0.9}
+\setstretch{0.7}
 count    21102.000000 \\
 mean       799.785924 \\
 std        100.830046 \\
@@ -49,13 +48,17 @@ min         31.016491 \\
 75\%        858.164028 \\
 max       1311.606144
 \end{center}
-
-\noindent
 The energy computation was conducted based on power consumption data to derive energy values in kWh. \\
-Distinct regions in the plot exhibit consistent energy levels around the mean, notably in June and August, alongside regions with negative peaks (e.g., July and October) and others with positive peaks. Understanding these peaks in the context of high-power computing offers valuable insights; \\
-for example, cooling needs vary with external conditions like temperature. Peaks may coincide with hotter periods, necessitating more energy for cooling. \\
-Also, changes in online service or data processing demand can influence energy consumption, e.g., heightened activity leading to increased power usage.
-\clearpage 
+Distinct regions in the plot exhibit consistent energy levels around the mean, notably in June and August, alongside regions with negative peaks (e.g., July and October) and others with positive peaks. Understanding these peaks in the context of high-power computing offers valuable insights. For example:
+\begin{itemize}
+    \item Cooling needs vary with external conditions like temperature;
+    \item Peaks may coincide with hotter periods, necessitating more energy for cooling.
+    \item Changes in online service or data processing demand can influence energy consumption, e.g., heightened activity leading to increased power usage.
+\end{itemize}
+The absence of a pattern in a dataset can be scientifically attributed to various factors including randomness, complexity, noise, limited sample size, underlying dynamics, data quality issues, and confounding factors. These factors can obscure any underlying trends or patterns in the data, making it challenging to discern meaningful insights.
+
+
+
 
 \subsection{PWR r205}
 At both rack and node levels in datacenters, the power consumption fluctuates around a baseline representing the average usage.\\This is due to varying workloads, with peaks corresponding to high-demand periods and valleys to low-demand one, to transient events and efficiency optimization strategies.
