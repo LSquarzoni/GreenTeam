@@ -1,0 +1,24 @@
+\section{Introduction}
+\noindent
+To start, a brief introduction to the tools and methods employed for data analysis is provided.
+\vspace{-15pt}
+
+\subsection{STL (Seasonal-Trend Decomposition)}
+STL (Seasonal-Trend Decomposition) is a technique used in time series analysis to break down a dataset into three main components: trend, seasonality, and remainder. \\
+1. \textbf{Trend}: This component captures the long-term direction or progression of the data, indicating whether it is increasing, decreasing, or staying constant over time. \\
+2. \textbf{Seasonality}: Seasonality refers to the periodic patterns or fluctuations that occur at regular intervals within the data, such as daily, weekly, or yearly cycles. \\
+3. \textbf{Remainder}: The remainder component represents the variability in the data that cannot be explained by the trend or seasonality. It captures the random fluctuations or noise present in the data. \\
+By decomposing the time series data into these components, STL allows to understand the underlying patterns and structures, making it easier to analyze and model the data effectively.
+
+\vspace{-15pt}
+
+\subsection{Meta's Prophet}
+Prophet is a forecasting tool developed by Facebook, designed to handle time series data with seasonal patterns and uncertainty. Its key points are: \\
+1. \textbf{Automatic Seasonality Detection}: Prophet automatically detects seasonal patterns in the data, making it suitable for datasets with irregular or changing seasonalities. \\
+2. \textbf{Trend Flexibility}: Users can specify various components of the time series, including holidays and special events, which are incorporated into the forecasting model. \\
+3. \textbf{Uncertainty Estimation}: Prophet provides uncertainty intervals around the forecasted values, helping users understand the range of possible outcomes. \\
+4. \textbf{Scalability}: It's designed to be scalable and can efficiently handle large datasets. \\
+In summary, Prophet simplifies the time series forecasting process with an intuitive interface and powerful forecasting capabilities, making it suitable for both beginners and experienced analysts. \\
+
+Prophet automates seasonal modeling for forecasting, while STL offers manual control for detailed trend analysis. Choose based on data complexity and desired level of control.
+
