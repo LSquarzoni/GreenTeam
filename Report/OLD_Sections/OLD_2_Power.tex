@@ -1,0 +1,153 @@
+\section{Power and Energy Analysis}
+\noindent
+The data distribution spans from April 2020 to October 2022, showing a discrete amount of information that can be enough to make some initial observations and guessings. While there isn't a discernible pattern across the entire period, comparing plots for specific nodes (r205n01), the sum of all nodes, and individual racks reveals certain trends. \\
+The lines in the plots that have a strange or unusual pattern are the result of the horizontal and vertical interpolation applied to fill some empty spaces in the distribution. No further manipulations have been applied to the data.
+
+\vspace{-15pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_total.png}
+\captionsetup{skip=-10pt}
+\caption{PWR total value (sum of all nodes in the server)}
+\label{fig:PWR_total}
+\end{figure}
+
+\begin{center}
+\setstretch{0.9}
+count    2.110200e+04 \\
+mean     7.997859e+05 \\
+std      1.008300e+05 \\
+min      3.101649e+04 \\
+25\%      7.600741e+05 \\
+50\%      8.096636e+05 \\
+75\%      8.581640e+05 \\
+max      1.311606e+06
+\end{center}
+
+\noindent
+In terms of pure power consumption, we see a visible peak that reaches a value of 1.3 MW, while the general mean stays close to 0.8 MW. The data fluctuates a lot throughout the days, but it is difficult to find any particular pattern or repetition at this level of depth; what we can guess is that all or most of the lowest points in the plot are given by a moment or period of maintenance for the server, while the highest values might indicate an episode of testing for the capabilities of the server in terms of maximum computational power.
+
+\vspace{-15pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/E_total.png}
+\captionsetup{skip=-10pt}
+\caption{E total value (sum of all nodes in the server)}
+\label{fig:E_total}
+\end{figure}
+\begin{center}
+\setstretch{0.7}
+count    21102.000000 \\
+mean       799.785924 \\
+std        100.830046 \\
+min         31.016491 \\
+25\%        760.074139 \\
+50\%        809.663640 \\
+75\%        858.164028 \\
+max       1311.606144
+\end{center}
+The energy computation was conducted based on power consumption data to derive energy values in kWh. \\
+Distinct regions in the plot exhibit consistent energy levels around the mean, notably in June and August, alongside regions with negative peaks (e.g., July and October) and others with positive peaks. Understanding these peaks in the context of high-power computing offers valuable insights. For example:
+\begin{itemize}
+    \item Cooling needs vary with external conditions like temperature;
+    \item Peaks may coincide with hotter periods, necessitating more energy for cooling.
+    \item Changes in online service or data processing demand can influence energy consumption, e.g., heightened activity leading to increased power usage.
+\end{itemize}
+The absence of a pattern in a dataset can be scientifically attributed to various factors including randomness, complexity, noise, limited sample size, underlying dynamics, data quality issues, and confounding factors. These factors can obscure any underlying trends or patterns in the data, making it challenging to discern meaningful insights.
+
+
+
+
+\subsection{PWR r205}
+At both rack and node levels in datacenters, the power consumption fluctuates around a baseline representing the average usage.\\This is due to varying workloads, with peaks corresponding to high-demand periods and valleys to low-demand one, to transient events and efficiency optimization strategies.
+
+\vspace{-5pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_r205.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r205}
+\label{fig:PWR_r205}
+\end{figure}
+
+\vspace{-5pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_r205n01.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r205n01}
+\label{fig:PWR_r205n01}
+\end{figure}
+\clearpage
+
+\subsection{PWR r206}
+Comparing the plots of the first rack (r205) with respect to the others it seems to be that the only one with a regular and stable power consumption is the r205.\\ Looking at a different rack as the r206 in figure 5 (but every other rack is more similar to this) there is a much different and oscillating plot. 
+
+\vspace{-12pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_r206.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r206}
+\label{fig:PWR_r206}
+\end{figure}
+
+\vspace{-20pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_r206n01.png}
+\captionsetup{skip=-10pt}
+\caption{PWR r206n01}
+\label{fig:PWR_r206n01}
+\end{figure}
+
+\subsubsection{Comparison r205 and other racks}
+The first rack in a data center often exhibits consistent power consumption due to several factors:
+\begin{itemize}
+    \item \textbf{Login nodes}: it is possible that the first rack contains login nodes. Due to this it exhibits a more regular pattern in power consumption since login nodes are primarly used for user access, job submission and management tasks which tend to have a more predictable load than the highly variable computational tasks running on compute nodes. In addition the workloads on login nodes are generally less intensive and more uniform over time, leading to more consistent power usage patterns and the hardware in login nodes is often optimized for efficiency and stability, which can contribute to a more predictable power consumption profile;
+    \item \textbf{Critical Infrastructure Equipment}: the first rack often contains critical equipment for infrastructure management, such as main routers or switches, which require a constant and reliable power supply. In addition data centers are designed with power distribution systems that ensure the first racks receive stable power and are not affected by load variations that may occur further down the distribution chain;
+    \item \textbf{Thermal Management}: The first racks are strategically positioned to benefit from optimal airflow, maintaining a constant temperature and reducing the risk of overheating. Consistent thermal conditions contribute to greater power regularity, as fluctuations in temperature can impact the energy efficiency of equipment;
+    \item \textbf{Facility Design}: The placement of racks and airflow management within the data center play a role in maintaining power consistency. Proper facility design ensures efficient airflow, contributing to stable power consumption;
+    \item \textbf{Uninterruptible Power Supplies (UPS) and Backup Generators}: Data centers employ UPS and backup generators to ensure uninterrupted and regular power supply to racks, safeguarding sensitive equipment from outages or voltage spikes;
+    \item \textbf{Rack Cabinet Design}: The choice and arrangement of rack cabinets can also influence power regularity. Enclosed racks, for instance, support better cooling efficiency and power distribution compared to open-frame racks, contributing to consistent power consumption.
+\end{itemize}
+All these factors work together to ensure that data centers operate with consistent power, which is essential for the reliability and performance of the services they provide.
+\clearpage
+
+\subsection{PWR r206n01 STL}
+Even making a seasonal-trend decomposition it’s hard to highlight any specific trend, since the data is full of variations and outliers. Taking advantage of a different tool we’ll try to make any seasonality clearer.
+
+\vspace{-10pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_stl_r206n01.png}
+%\captionsetup{skip=-10pt}
+\caption{PWR r206n01 STL}
+\label{fig:PWR_stl_r206n01}
+\end{figure}
+
+\subsection{PWR analysis using Meta's Prophet}
+Thanks to the usage of this method we are able to extract a clearer representation of the possible trends of power consumption in our server:
+good choices, purely looking at the following data, might be to increase the nodes' usage during the night, during week days and also during hot seasons, all periods in which power consumption results to be lower. 
+
+\vspace{-10pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{../../PLOTS/PWR_prophet.png}
+%\captionsetup{skip=-10pt}
+\caption{PWR trends}
+\label{fig:PWR_prophet}
+\end{figure}
+
+\noindent
+Analyzing these trends aids in optimizing energy management strategies and mitigating environmental impact in high-power computing environments.
+For example implementing energy optimization algorithms could reduce consumption during certain periods, resulting in negative peaks;
+while aiming to a better server energy efficiency can lead to improvements in server and cooling efficiency and alter the graph's shape over time, potentially reducing energy consumption peaks.
