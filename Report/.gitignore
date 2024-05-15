@@ -8,4 +8,5 @@
 *.synctex.gz
 *.toc
 *.blg
+*.bbl
 *.bbl-SAVE-ERROR
