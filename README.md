@@ -9,8 +9,8 @@ Explore the world of Big Data Analysis in the context of high-performance comput
 ----
 Sustainable computing is increasingly vital in our digital era, especially within HPC systems. To achieve this goal, it is crucial to utilize big data analysis of HPC monitoring data.
 
-Open Data (M100 ExaData): https://www.nature.com/articles/s41597-023-02174-3 
-This paper discusses the monitoring data of a large-scale data center, specifically a high-performance computing system.
+Open Data (M100 ExaData): 
+- https://www.nature.com/articles/s41597-023-02174-3: the paper discusses the monitoring data of a large-scale data center, specifically a high-performance computing system.
 
 Open Data (Electricity Consumption and Carbon Footprint Analysis):
 - Carbon Intensity - Low Carbon Percentage - Renewable Percentage: https://www.electricitymaps.com/data-portal/italy 
