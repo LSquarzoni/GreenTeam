@@ -1,5 +1,25 @@
 \section{Introduction}
 \noindent
 
-\textcolor{red}{introduce background info, general information about the project; the schematic representation of the computer, where and how the racks are located}
-\vspace{-15pt}
+Sustainable computing is increasingly vital in our digital era, especially within HPC systems.
+To achieve this goal, it is crucial to utilize big data analysis of High-Performance Computing (HPC) monitoring data.
+This work is focused on the two important aspects of it: power profiling, and tracking, predicting $CO_2$ emissions in the scope of the Laboratory of Big Data Architectures course.
+As a result of the data analysis the power and energy consumption optimization techniques were suggested, as well as the predictive model of $CO_2$ emissions was tested with achieving only 10.31\% error rate.
+
+\subsection{CINECA MARCONI100}
+MARCONI is the Tier-0 system, co-designed by CINECA and based on the Lenovo NeXtScale platform, that replaced the former IBM BG/Q system (FERMI) in June 2016.
+MARCONI100 is an upgrade of the "not conventional" partition of the Marconi Tier-0 system. It is an accelerated cluster based on Power9 chips and Volta NVIDIA GPUs, acquired by Cineca within the PPI4HPC European initiative.
+In total it presents 55 racks, 49 of which used for computational purposes \cite{Marconi100Site}, for a total of 980 nodes, plus 8 login nodes, able to reach a peak performance of about 32 PFlops.
+Each rack contains a total of 20 vertically stacked nodes.
+
+\subsection{M100 ExaData}
+All data related to the data center has been collected taking advantage of the ExaMon framework, as described in the related paper \cite{Marconi100}, then processed to remove redundant and sensitive information and finally transformed into a partitioned Parquet dataset.
+Among the metrics obtained from HW sensors, there are: the CPU load of all the cores in the supercomputing nodes, CPU clock, instructions per second, memory accesses (bytes written and read), fan speed, the temperature of the room hosting the system racks, power consumption (at different levels), etc.
+This work mainly focuses on the data related to power utilization and temperature readings.
+
+\subsection{Carbon Intensity Data}
+The data on Carbon Intensity is provided by ElectricityMaps, which provides carbon intensity data coming from electricity consumption for more than 200 zones in the world.
+The Carbon Intensity metric measures the amount of how "clean" the electricity in a given zone at a given time, representing the grams of carbon dioxide ($CO_2$) in the atmosphere released per kilowatt hour (kWh).
+Particularly, for this work the Carbon Intensity data for the North Italy region was used.
+The dataset includes the carbon intensity of LCA and \textit{direct} \cite{CarbonIntensity} impacts, particularly, the LCA (Life-Cycle Assessment) data includes the "compiled" carbon intensity as related to all stages throughout the product’s life-cycle:
+from raw material extraction to production, usage, and disposal, while direct is related to the direct emissions during operation. For our work, we use LCA+Direct metrics.

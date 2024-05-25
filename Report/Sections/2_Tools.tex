@@ -1,36 +1,32 @@
 \section{Tools}
 \noindent
 
-\textcolor{red}{Tools - tools that were used and what techniques/libraries were used to prepare dataset etc; 
-2.1. preparation of dataset: the interpolation, sorting etc;
-2.2. Meta Prophet?
-2.3. STL}
-
-To start, a brief introduction to the tools and methods employed for data analysis is provided.
-\vspace{-15pt}
+To begin with, introducing the tools and methods employed for data analysis:
 
 \subsection{Dataset Preparation}
-\vspace{-15pt}
+During the development of the project we dealt with more than one dataset, but all of them required similar manipulations: extracting specific periods, dropping unnecessary columns, or formatting values (eg. timestamps) for proper processing. 
+The power data frame has been further modified: the initial months of data have been dropped and the dataset resampled on an hourly basis, resulting in mean power consumption samples for each hour; 
+the presence of missing values (NaN) has been handled by applying linear interpolation both along rows and columns: in this way, it was possible to ensure that all missing values were filled in a way that maintains continuity in both temporal and spatial dimensions.
 
-\subsection{STL (Seasonal-Trend Decomposition)}
-STL (Seasonal-Trend Decomposition) is a technique used in time series analysis to break down a dataset into three main components: trend, seasonality, and remainder. \\
-1. \textbf{Trend}: This component captures the long-term direction or progression of the data, indicating whether it is increasing, decreasing, or staying constant over time. \\
-2. \textbf{Seasonality}: Seasonality refers to the periodic patterns or fluctuations that occur at regular intervals within the data, such as daily, weekly, or yearly cycles. \\
-3. \textbf{Remainder}: The remainder component represents the variability in the data that cannot be explained by the trend or seasonality. It captures the random fluctuations or noise present in the data. \\
-By decomposing the time series data into these components, STL allows to understand the underlying patterns and structures, making it easier to analyze and model the data effectively.
+\subsection{Time Series Prediction with Prophet by Meta}
+Prophet \cite{ProphetSite} is a powerful forecasting tool developed by Meta to handle time series data: it can define the seasonality patterns and predict the future behavior of time series. 
+It uses an additive statistical model to perform the prediction in the form of
 
-\vspace{-15pt}
+\[y(t) = g(t) + s(t) + h(t) + \epsilon\]
 
-\subsection{Prophet by Meta}
+Precisely, it can be considered as a generalized additive model (GAM), which is a regression model with an application of non-linear smoothers \cite{Prophet1}, where the components are: g(t) - the trend, s(t) - seasonality, h(t) - holiday effect, and $\epsilon$ is an error. Particularly, the trend component g(t) is the piecewise linear trend of aperiodic changes in the time series. 
+In contrast, the seasonal component s(t) is modeled with a Fourier Series to include the periodic patterns. 
+Moreover, the holiday component h(t) is the effect of the holidays that can be also taken into consideration in describing the time series irregularities. 
+The error term is also included to represent the noise and outliers in the data. 
+The prediction result of Prophet also provides information about the confidence interval (uncertainty) of the data, which is related to the changes in the data trend. By default \cite{Prophet2}, it considers the future trend changes with the same average frequency and magnitude as observed in the previous data, and projects it further using the Laplace approximation to stimulate possible further trends, which will contribute to the range of the uncertainty interval. 
+Generally, Prophet can detect the seasonality and periodicity trends in the data automatically, as well as provide flexibility in terms of the ability to set up and adjust the components manually.
 
+\subsection{Trend Detection with Seasonal-Trend Decomposition (STL)}
+The STL (Seasonal-Trend Decomposition) technique \cite{STL} employs several mathematical and statistical tools to describe seasonality, trend, and remainder components in time series data. 
+It uses LOESS, or Local Regression, which is a non-parametric smoothing method used to estimate trend and seasonal components. 
+The LOESS function locally fits data using polynomial regressions over moving windows, allowing for capturing both short-term and long-term fluctuations. 
+The basic formula for a single smoothed observation $y_i$ is:
 
+\[\widehat{y}_i = \sum_{j=1,...n} w_{ij} * y_j\]
 
-Prophet\cite{example} is a forecasting tool developed by Facebook, designed to handle time series data with seasonal patterns and uncertainty. Its key points are: \\
-1. \textbf{Automatic Seasonality Detection}: Prophet automatically detects seasonal patterns in the data, making it suitable for datasets with irregular or changing seasonalities. \\
-2. \textbf{Trend Flexibility}: Users can specify various components of the time series, including holidays and special events, which are incorporated into the forecasting model. \\
-3. \textbf{Uncertainty Estimation}: Prophet provides uncertainty intervals around the forecasted values, helping users understand the range of possible outcomes. \\
-4. \textbf{Scalability}: It's designed to be scalable and can efficiently handle large datasets. \\
-In summary, Prophet simplifies the time series forecasting process with an intuitive interface and powerful forecasting capabilities, making it suitable for both beginners and experienced analysts. \\
-
-Prophet automates seasonal modeling for forecasting, while STL offers manual control for detailed trend analysis. Choose based on data complexity and desired level of control.
-
+where $w_{ij}$ are weights calculated based on the distance between $x_i$ and $x_j$, often using a kernel function like the tri-cube function, which includes the width of the smoothing window.
