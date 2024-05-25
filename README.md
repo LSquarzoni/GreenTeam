@@ -1,9 +1,5 @@
 # GreenTeam
-Big Data Analysis and Green Computing: Profiling HPC Power and Tracking CO2 Emissions
-
-### OBJECTIVE             
-----
-Explore the world of Big Data Analysis in the context of high-performance computing (HPC), with a specific focus on two important aspects: power profiling and tracking CO2 emissions.​
+Big Data Analysis and Green Computing: Profiling HPC Power and Tracking CO2 Emissions. Explore the world of Big Data Analysis in the context of high-performance computing (HPC), with a specific focus on two important aspects: power profiling and tracking CO2 emissions.​
 
 ### BACKGROUND           
 ----
