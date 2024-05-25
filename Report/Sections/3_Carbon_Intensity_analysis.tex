@@ -27,22 +27,20 @@ Hence, by analyzing these patterns we can predict the future CI, and evaluate it
 
 \subsection{Prediction Techniques of CI}
 The methodology for our prediction is based on a comparison of two models: the baseline last value predictor, and the machine learning (ML) model. 
-The first, simple baseline model is the prediction based on the previous observed value: the next value is dependent on the last week’s value at the same time and week of the day. 
+The first, simple baseline model is the prediction based on the previous observed value: the next value is dependent on the last week value at the same time and week of the day. 
 The advantage of this prediction is that it is generally a lightweight solution requiring minimal computational resources, however, it has no extended parameter tuning options. 
 The second, ML model is based on the Prophet time series predictor, which is a more complex solution compared to the first one. 
 ML models can capture the patterns and relationships in data points, as well as adapt to the changes in data distribution, being more robust with dynamic data. 
 Hence, using such a lightweight solution in comparison with a complex ML model allows us to compare the efficiency of the predictive ML model. 
 \\
-Our ML model is the Meta’s Prophet time series predictor, which is a powerful tool for predicting the time series. 
+Our ML model is the Prophet by Meta time series predictor, which is a powerful tool for predicting the time series. 
 To achieve the best performance, we trained the predictor on different periods of the dataset, particularly, from 30-month data to 10 months with a step of 2 months, which demonstrated the impact of historical data. 
 Furthermore, we compared the performance on varying lengths of the forecasting horizon. 
 Moreover, based on the prophet documentation, the available hyperparameters were tuned to find the best-performing configuration. 
 
 \subsection{Prediction Result}
-Based on our prediction using the last value predictor, it has demonstrated an absolute error of 16.22\% \ref{fig:CI_PRED}. 
-On the same dataset, our ML model has been trained on 130 different possible configurations of parameters, which resulted in the error rate in a wide range of 10\% to 159\%. 
-Particularly, as a result of the tuning ML prediction, our key finding demonstrates that we could achieve the 10.31\% absolute error relative to the real data with training on 16 month period and prediction horizon for 2 months with the parameters of '\textit{changepoint_prior_scale}' as 0.1, and '\textit{seasonality_prior_scale}' as 0.01. 
-The first parameter controls the flexibility of the trend by adjusting the penalty for changepoints in the time series trend, adding more flexibility to fit small fluctuations, while the second parameter controls the "strength" of the historical distribution over the prediction. 
+Based on our prediction using the last value predictor, it has demonstrated an absolute error of 16.22\%. 
+On the same dataset, our ML model has been trained on 130 different possible configurations of parameters, which resulted in the error rate in a wide range of 10\% to 159\%. Particularly, as a result of the tuning ML prediction, our key finding demonstrates that we could achieve the 10.31\% absolute error relative to the real data with training on 16 month period and prediction horizon for 2 months with the parameters of changepoint\_prior\_scale as 0.1, and seasonality\_prior\_scale as 0.01.  The first parameter controls the flexibility of the trend by adjusting the penalty for changepoints in the time series trend, adding more flexibility to fit small fluctuations, while the second parameter controls the "strength" of the historical distribution over the prediction. 
 Therefore, we could surpass the simple model prediction using the ML approach. 
 
 \begin{figure}[H]

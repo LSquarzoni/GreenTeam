@@ -3,7 +3,7 @@
 
 \subsection{Power analysis}
 The available data spans in the range of April 2020 to October 2022. 
-The fluctuations of data do not demonstrate the pattern of seasonality visually, which is further confirmed with the STL analysis tool \ref{fig:PWR_STL}, which also did not demonstrate the seasonality pattern of energy consumption.
+The fluctuations of data do not demonstrate the pattern of seasonality visually, which is further confirmed with the STL analysis tool (Figure \ref{fig:PWR_STL}), which also did not demonstrate the seasonality pattern of energy consumption.
 
 \begin{figure}[H]
     \centering
@@ -41,13 +41,13 @@ It is possible that the first rack may be used for different purposes, such as j
     \label{fig:PWR_nodes_boxplot}
 \end{figure}
 
-The figure \ref{fig:PRW_nodes_boxplot} provides a comparison of power consumption across 20 different nodes (n01 to n20).
+The figure \ref{fig:PWR_nodes_boxplot} provides a comparison of power consumption across 20 different nodes (n01 to n20).
 The boxplot represents the data distributions and a line plot shows the median for each node, highlighting the central tendency of power consumption.
 Each node shows variability in power consumption, with some nodes having wider variation, indicating more fluctuation in power usage.
 Moreover, Nodes located upside (n17 to n20) tend to have higher median power consumption compared to those located on the downside of the rack (n01 to n05). Node n20 shows the highest variability and median power consumption.
 
 \subsection{Temperature of Operation}
-Dealing with HPC forces us to take into consideration temperature distribution and the effect it might have on the general performance of the system, given the correlation that exists between power consumption and temperature itself; this correlation can be relatively seen in the following plot \ref{fig:PWR_TEMP}, which is really important for our future considerations:
+Dealing with HPC forces us to take into consideration temperature distribution and the effect it might have on the general performance of the system, given the correlation that exists between power consumption and temperature itself; this correlation can be relatively seen in the following figure \ref{fig:PWR_TEMP}, which is really important for our future considerations:
 
 \begin{figure}[H]
     \centering
@@ -59,7 +59,7 @@ Dealing with HPC forces us to take into consideration temperature distribution a
 The line trend represents a piece of data we already investigated, the average power that the different nodes consume, while the histogram shows the average inlet temperature of the air flowing into the nodes;
 it is clear that the higher nodes tend to receive warmer air with respect to the lower ones, because of heat transfer from bottom to top of the room containing the racks.
 Particularly, the plot highlights the tendency of warmer nodes to consume more power.
-To further investigate this possible cause of inefficiency we can comment the second plot \ref{fig:TEMP}:
+To further investigate this possible cause of inefficiency we can comment the second figure \ref{fig:TEMP}:
 
 \begin{figure}[H]
     \centering
