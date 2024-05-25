@@ -18,14 +18,10 @@ Open Data (Electricity Consumption and Carbon Footprint Analysis):
 
 ### STRUCTURE OF REPOSITORY     
 ----
-- **PWR_Dataset_plotting**
-- **PWR_Dataset_3_years**
-- **Energy_Saving_computation**
-- **Cop_Energy_Dataset**
-- **CI_Prediction**
-- **CI_Dataset_plotting**
-- **Report/main.pdf** - report of the work done
-
-### OTHER
-----
-...to be added further
+- [**Report/main.pdf**](https://github.com/LSquarzoni/GreenTeam/blob/main/Report/main.pdf "**Report/main.pdf**") - report of the work done
+- [**PWR_Dataset_3_years**](https://github.com/LSquarzoni/GreenTeam/blob/main/PWR_Dataset_3_years.ipynb "**PWR_Dataset_3_years**") - reading the power dataset, sampling and interpolation of the data
+- [**PWR_Dataset_plotting**](https://github.com/LSquarzoni/GreenTeam/blob/main/PWR_Dataset_plotting.ipynb "**PWR_Dataset_plotting**") - visualizations of the dataset
+- [**CI_Dataset_plotting**](https://github.com/LSquarzoni/GreenTeam/blob/main/CI_Dataset_plotting.ipynb "**CI_Dataset_plotting**") - reading the carbon intensity dataset, visualization and analysis
+- [**CI_Prediction**](https://github.com/LSquarzoni/GreenTeam/blob/main/CI_Prediction.ipynb "**CI_Prediction**") - time series prediction of the carbon intensity
+- [**Cop_Energy_Dataset**](https://github.com/LSquarzoni/GreenTeam/blob/main/Cop_Energy_Dataset.ipynb "**Cop_Energy_Dataset**") - operational carbon footprint calculations
+- [**Energy_Saving_computation**](https://github.com/LSquarzoni/GreenTeam/blob/main/Energy_Saving_computation.ipynb "**Energy_Saving_computation**") - power/energy considerations and calculatons 
