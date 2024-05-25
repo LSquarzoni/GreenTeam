@@ -14,7 +14,7 @@ The fluctuations of data do not demonstrate the pattern of seasonality visually,
 
 However, the separate regions of the graph exhibit constant trends during small periods (eg.: July-October).
 This potentially can be related to external conditions such as outside temperature depending on the season of the year: the cooling may vary depending on these external conditions, which can lead to either increased or decreased energy consumption.
-Moreover, the general increases in energy consumption can be related to the performing the computations, which leads to higher activity of the node and increased power usage, depending on the heaviness of the task.
+Moreover, the general increases in energy consumption can be related to the performing of computations, which leads to higher activity of the node and increased power usage, depending on the heaviness of the task.
 
 \begin{figure}[H]
     \centering
@@ -78,7 +78,7 @@ This quantity is obtained by combining the energy consumption [kWh] with the Car
 
 \[ COP = E * CI\]
 
-As the COP was calculated \ref{fig:COP} and based on both Energy and CI, it has been demonstrated before that energy doesn’t show any clear predictable pattern, while CI has better predictability, the further work can be focused on developing an enhanced model to predict the COP.
+As the COP was calculated (Figure 10) and based on both Energy and CI, it has been demonstrated before that energy doesn’t show any clear predictable pattern, while CI has better predictability, the further work can be focused on developing an enhanced model to predict the COP.
 
 \begin{figure}[H]
     \centering
@@ -89,8 +89,10 @@ As the COP was calculated \ref{fig:COP} and based on both Energy and CI, it has 
 
 \subsection{Analysis of Data and Suggestions for Green Computing}
 Given these assumptions and hypotheses we wanted to evaluate how much this approach might actually impact on the overall energy consumption; to do so we considered two different cases, always having the same goal: to estimate how much we could have saved in terms of electricity cost and gas emission.
-I. With an approximation, we computed our final values using only the average energy per node; then we substituted the upper four nodes’ energy value with the mean value and finally multiplied the obtained energy by the number of racks, taking into consideration that each node is present in all 49 racks.
-II. Using the whole 2.5-year distribution of hourly samples for the energy dataset, without the data manipulation, we repeated a similar computation.
+\begin{itemize}
+  \item I. With an approximation, we computed our final values using only the average energy per node; then we substituted the upper four nodes’ energy value with the mean value and finally multiplied the obtained energy by the number of racks, taking into consideration that each node is present in all 49 racks.
+  \item II. Using the whole 2.5-year distribution of hourly samples for the energy dataset, without the data manipulation, we repeated a similar computation.
+\end{itemize}
 In both cases, the EUR/MWh cost metric we used has been taken from real data related to Italy \cite{ElectricityCost}, and referred to the cost of wholesale energy directly from the producer; so we need to take into consideration that the actual price per energy tends to be higher for the final customer, like CINECA itself.
 \\
 Case I returned an approximate yearly saving of around 19.33 MWh, equivalent to 3151.39 €, obtained using the average cost for the energy in that period of time. Case II confirmed the initial result, returning a more accurate 3932.90 € per year, equivalent to 18.62 MWh.
